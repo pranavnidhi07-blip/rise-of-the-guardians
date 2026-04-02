@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tower Defense Game</title>
+</head>
+<body>
+    <header>
+        <div id="game-stats">
+            <p>Lives: <span id="lives">20</span></p>
+            <p>Gold: <span id="gold">100</span></p>
+            <p>Score: <span id="score">0</span></p>
+            <p>Wave: <span id="wave">1</span></p>
+        </div>
+        <div id="controls">
+            <button id="start-wave">Start Wave</button>
+            <button id="pause">Pause</button>
+            <button id="reset">Reset</button>
+        </div>
+    </header>
+    <main>
+        <canvas id="gameCanvas" width="800" height="600"></canvas>
+    </main>
+    <aside>
+        <div id="tower-selection">
+            <button class="tower" id="gun">Gun Tower</button>
+            <button class="tower" id="laser">Laser Tower</button>
+            <button class="tower" id="ice">Ice Tower</button>
+            <button class="tower" id="tesla">Tesla Tower</button>
+            <button class="tower" id="bomb">Bomb Tower</button>
+        </div>
+    </aside>
+    <footer>
+        <div id="control-panel">
+            <p>Game Stats:</p>
+            <ul>
+                <li>Total Waves: <span id="total-waves">0</span></li>
+                <li>Total Enemies Defeated: <span id="total-defeated">0</span></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="game.js"></script>
+</body>
+</html>
