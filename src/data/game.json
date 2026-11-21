@@ -1,0 +1,138 @@
+{
+ "towers": {
+  "archer": {
+   "name": "Archer",
+   "cost": 50,
+   "range": 150,
+   "dmg": 12,
+   "rate": 0.55,
+   "speed": 520,
+   "proj": "p_arrow",
+   "air": true,
+   "upgrades": [
+    60,
+    100
+   ],
+   "desc": "Fast single target. Hits ground and air."
+  },
+  "cannon": {
+   "name": "Cannon",
+   "cost": 90,
+   "range": 135,
+   "dmg": 34,
+   "rate": 1.5,
+   "speed": 330,
+   "proj": "p_ball",
+   "splash": 58,
+   "air": false,
+   "upgrades": [
+    100,
+    160
+   ],
+   "desc": "Splash damage. Ground only (cannot hit flyers)."
+  },
+  "frost": {
+   "name": "Frost",
+   "cost": 70,
+   "range": 125,
+   "dmg": 4,
+   "rate": 0.9,
+   "speed": 420,
+   "proj": "p_ice",
+   "slow": 0.5,
+   "slowTime": 2.2,
+   "air": true,
+   "upgrades": [
+    70,
+    110
+   ],
+   "desc": "Slows enemies so other towers hit more."
+  },
+  "mage": {
+   "name": "Mage",
+   "cost": 130,
+   "range": 170,
+   "dmg": 62,
+   "rate": 1.9,
+   "speed": 380,
+   "proj": "p_magic",
+   "air": true,
+   "upgrades": [
+    150,
+    220
+   ],
+   "desc": "Heavy damage, slow casting. Great vs armor."
+  }
+ },
+ "enemies": {
+  "runner": {
+   "hp": 40,
+   "speed": 95,
+   "reward": 8,
+   "lives": 1,
+   "r": 14
+  },
+  "tank": {
+   "hp": 230,
+   "speed": 44,
+   "reward": 20,
+   "lives": 2,
+   "armor": 4,
+   "r": 20
+  },
+  "flyer": {
+   "hp": 70,
+   "speed": 78,
+   "reward": 14,
+   "lives": 1,
+   "air": true,
+   "r": 16
+  },
+  "healer": {
+   "hp": 120,
+   "speed": 58,
+   "reward": 18,
+   "lives": 1,
+   "heal": true,
+   "r": 14
+  },
+  "boss": {
+   "hp": 2200,
+   "speed": 30,
+   "reward": 250,
+   "lives": 6,
+   "armor": 6,
+   "r": 40
+  }
+ },
+ "heroes": [
+  {
+   "name": "Prince Aldric",
+   "tex": "h_prince",
+   "role": "Prince - brave frontline leader",
+   "ability": "Royal Charge (coming soon)",
+   "line": "For the Heart Crystal!"
+  },
+  {
+   "name": "Princess Elara",
+   "tex": "h_princess",
+   "role": "Princess - royal sorceress",
+   "ability": "Meteor Strike [M]: area damage",
+   "line": "The light of the crystal guides me!"
+  },
+  {
+   "name": "Rowan",
+   "tex": "h_archer",
+   "role": "Archer - swift and precise",
+   "ability": "Arrow Rain (coming soon)",
+   "line": "Eyes sharp, bowstring tight."
+  },
+  {
+   "name": "Pip",
+   "tex": "fairy",
+   "role": "Fairy - frost and support",
+   "ability": "Freeze [F]: slows all enemies",
+   "line": "Hee hee, catch me if you can!"
+  }
+ ]
+}
